@@ -113,24 +113,28 @@
 
     /* ── PROJECTS ── */
     #projects { background: var(--bg); }
-    .projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .projects-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
     .proj-card { border-radius: 14px; padding: 32px; display: flex; flex-direction: column; min-height: 440px; }
     .proj-card.gold { background: var(--bg3); border: 1px solid rgba(255,215,0,0.22); }
     .proj-card.teal { background: var(--bg3); border: 1px solid rgba(0,194,203,0.28); }
     .proj-card.purple { background: var(--bg3); border: 1px solid rgba(124,58,237,0.28); }
+    .proj-card.blue { background: var(--bg3); border: 1px solid rgba(59,130,246,0.28); }
     .proj-badge-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
     .proj-status { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; }
     .proj-status.gold { color: var(--gold); background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.2); }
     .proj-status.teal { color: var(--accent); background: rgba(0,194,203,0.08); border: 1px solid rgba(0,194,203,0.2); }
     .proj-status.purple { color: #a78bfa; background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2); }
+    .proj-status.blue { color: #60a5fa; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); }
     .proj-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
     .proj-icon.gold { background: rgba(255,215,0,0.1); }
     .proj-icon.teal { background: rgba(0,194,203,0.1); }
     .proj-icon.purple { background: rgba(124,58,237,0.1); }
+    .proj-icon.blue { background: rgba(59,130,246,0.1); }
     .proj-category { font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 10px; }
     .proj-category.gold { color: var(--gold); }
     .proj-category.teal { color: var(--accent); }
     .proj-category.purple { color: #a78bfa; }
+    .proj-category.blue { color: #60a5fa; }
     .proj-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 14px; }
     .proj-desc { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; flex: 1; }
     .proj-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
@@ -138,6 +142,7 @@
     .proj-tag.gold { color: var(--gold); background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.2); }
     .proj-tag.teal { color: var(--accent); background: rgba(0,194,203,0.08); border: 1px solid rgba(0,194,203,0.2); }
     .proj-tag.purple { color: #a78bfa; background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2); }
+    .proj-tag.blue { color: #60a5fa; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); }
     .proj-footer { margin-top: auto; }
     .proj-btn { display: inline-block; font-size: 14px; font-weight: 600; padding: 11px 22px; border-radius: 8px; text-decoration: none; transition: all 0.2s; }
     .proj-btn.teal { color: #000; background: var(--accent); }
@@ -248,7 +253,7 @@
         <li><a href="#experience" data-section="experience">Experience</a></li>
         <li><a href="#contact" data-section="contact">Contact</a></li>
       </ul>
-      <a href="https://milad-gerami.github.io/Milad_Gerami_BI_Developer_Resume.pdf" target="_blank" class="nav-resume">Resume</a>
+      <a href="https://milad-gerami.github.io/Milad_Gerami_Resume.pdf" target="_blank" class="nav-resume">Resume</a>
     </div>
   </nav>
 
@@ -263,7 +268,7 @@
         <a href="https://github.com/Milad-Gerami" target="_blank">↗ GitHub</a>
         <span>📍 Irvine, CA — Open to Pacific Northwest & Southern CA</span>
       </div>
-      <p class="hero-desc">Power BI Developer with a background in Civil Engineering, Construction, and Telecommunications. Currently at Colaberry Inc., where I build, maintain, and troubleshoot Power BI reports and dashboards for clients. My strongest independent work: an end-to-end Automotive Market Intelligence Dashboard built on 50K+ vehicle records using SSIS, SQL Server, and Power BI, and a construction risk model that reached 96.5% prediction accuracy. I bring an engineering mindset to data — structured, reliable, and built to last.</p>
+      <p class="hero-desc">Power BI Developer with a background in Civil Engineering, Construction, and Telecommunications. I build dashboards, data models, and ETL pipelines using Power BI, SQL Server, SSIS, and Microsoft Fabric, and I bring an engineering mindset to every problem I work on: structured, methodical, and focused on getting it right. My engineering years gave me a direct advantage I carry into every BI project, I understand the operational side of a business before I touch the data, which makes it easier to translate what stakeholders actually need into solutions that work. My project work covers end-to-end BI solutions built on real government and industry data, from SSIS pipelines and SQL Server models to Fabric lakehouses and Direct Lake semantic models, I own the full picture.</p>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">View My Work</a>
         <a href="#contact" class="btn-ghost">Get In Touch</a>
@@ -421,7 +426,7 @@
           </div>
           <div class="proj-category teal">Power BI · Data Analytics</div>
           <div class="proj-title">Executive Risk Command Center</div>
-          <p class="proj-desc">Power BI dashboard analyzing 1,000+ construction projects across 83 risk variables, achieving 96.5% prediction accuracy. Star-schema model with optimized DAX measures for KPI tracking, cost overrun analysis, and executive-level risk visibility.</p>
+          <p class="proj-desc">Power BI dashboard analyzing 1,000+ construction projects across 83 risk variables, achieving 96.5% prediction accuracy. Star-schema data model built in SQL Server with optimized DAX measures for KPI tracking, cost overrun analysis, and executive-level risk visibility. Includes calculated risk scores, department-level drill-downs, and conditional formatting to surface high-risk projects before they escalate.</p>
           <div class="proj-tags">
             <span class="proj-tag teal">Power BI</span>
             <span class="proj-tag teal">DAX</span>
@@ -430,6 +435,26 @@
           </div>
           <div class="proj-footer">
             <a href="https://app.powerbi.com/view?r=eyJrIjoiZmRhODg3ZDEtY2ViNS00MDFlLWEzNWYtYWYzNjY3OWFhMWM5IiwidCI6ImYxYWQ2ODFmLTZmNjItNDNhOS04MjQxLTA3MDMxNjBlMTM0OCIsImMiOjN9&embedImagePlaceholder=true&pageName=b486e26b905c0ed962de" target="_blank" class="proj-btn teal">↗ View Live Dashboard</a>
+          </div>
+        </div>
+        <div class="proj-card blue">
+          <div class="proj-badge-row">
+            <div class="proj-icon blue">🏥</div>
+            <span class="proj-status blue">Fabric Pipeline</span>
+          </div>
+          <div class="proj-category blue">Microsoft Fabric · Direct Lake · DAX</div>
+          <div class="proj-title">Hospital Report Center</div>
+          <p class="proj-desc">End-to-end Microsoft Fabric pipeline, from raw CSV ingestion through Dataflow Gen2 into Delta Lake tables in OneLake, to a Direct Lake semantic model and published Power BI dashboard. Covers 17,489 patient records across admissions, diagnoses, treatments, and billing. Calendar table built in Power Query (M) to work around Direct Lake calculated table constraints. CDF-enabled Delta tables, Spark SQL schema operations via Notebook, and DAX measures for revenue trends, discharge rates, and average length of stay.</p>
+          <div class="proj-tags">
+            <span class="proj-tag blue">Microsoft Fabric</span>
+            <span class="proj-tag blue">Dataflow Gen2</span>
+            <span class="proj-tag blue">Direct Lake</span>
+            <span class="proj-tag blue">DAX</span>
+            <span class="proj-tag blue">Power Query (M)</span>
+            <span class="proj-tag blue">PySpark</span>
+          </div>
+          <div class="proj-footer">
+            <a href="#" target="_blank" class="proj-btn blue">↗ View on GitHub</a>
           </div>
         </div>
         <div class="proj-card purple">
@@ -582,7 +607,7 @@
               <span class="target-role-dot">◆</span>
               <span class="target-role-text">Business Analyst</span>
             </div>
-            <a href="https://milad-gerami.github.io/Milad_Gerami_BI_Developer_Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+            <a href="https://milad-gerami.github.io/Milad_Gerami_Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
           </div>
         </div>
       </div>
