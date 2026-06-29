@@ -119,22 +119,27 @@
     .proj-card.teal { background: var(--bg3); border: 1px solid rgba(0,194,203,0.28); }
     .proj-card.purple { background: var(--bg3); border: 1px solid rgba(124,58,237,0.28); }
     .proj-card.blue { background: var(--bg3); border: 1px solid rgba(59,130,246,0.28); }
+    .proj-card.steel { background: var(--bg3); border: 1px solid rgba(70,110,160,0.28); }
+    .proj-card.centered { grid-column: 1 / -1; max-width: calc(50% - 12px); justify-self: center; }
     .proj-badge-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
     .proj-status { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; }
     .proj-status.gold { color: var(--gold); background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.2); }
     .proj-status.teal { color: var(--accent); background: rgba(0,194,203,0.08); border: 1px solid rgba(0,194,203,0.2); }
     .proj-status.purple { color: #a78bfa; background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2); }
     .proj-status.blue { color: #60a5fa; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); }
+    .proj-status.steel { color: #8baac4; background: rgba(70,110,160,0.08); border: 1px solid rgba(70,110,160,0.2); }
     .proj-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
     .proj-icon.gold { background: rgba(255,215,0,0.1); }
     .proj-icon.teal { background: rgba(0,194,203,0.1); }
     .proj-icon.purple { background: rgba(124,58,237,0.1); }
     .proj-icon.blue { background: rgba(59,130,246,0.1); }
+    .proj-icon.steel { background: rgba(70,110,160,0.1); }
     .proj-category { font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 10px; }
     .proj-category.gold { color: var(--gold); }
     .proj-category.teal { color: var(--accent); }
     .proj-category.purple { color: #a78bfa; }
     .proj-category.blue { color: #60a5fa; }
+    .proj-category.steel { color: #8baac4; }
     .proj-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 14px; }
     .proj-desc { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; flex: 1; }
     .proj-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
@@ -143,6 +148,7 @@
     .proj-tag.teal { color: var(--accent); background: rgba(0,194,203,0.08); border: 1px solid rgba(0,194,203,0.2); }
     .proj-tag.purple { color: #a78bfa; background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2); }
     .proj-tag.blue { color: #60a5fa; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); }
+    .proj-tag.steel { color: #8baac4; background: rgba(70,110,160,0.08); border: 1px solid rgba(70,110,160,0.2); }
     .proj-footer { margin-top: auto; }
     .proj-btn { display: inline-block; font-size: 14px; font-weight: 600; padding: 11px 22px; border-radius: 8px; text-decoration: none; transition: all 0.2s; }
     .proj-btn.teal { color: #000; background: var(--accent); }
@@ -153,6 +159,8 @@
     .proj-btn.blue:hover { background: #0d6f8f; }
     .proj-btn.gold { color: var(--gold); background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.22); }
     .proj-btn.gold:hover { background: rgba(255,215,0,0.14); }
+    .proj-btn.steel { color: #8baac4; background: rgba(70,110,160,0.1); border: 1px solid rgba(70,110,160,0.3); }
+    .proj-btn.steel:hover { background: rgba(70,110,160,0.2); }
 
     /* ── EXPERIENCE ── */
     #experience { background: var(--bg2); }
@@ -457,7 +465,26 @@
             <a href="https://github.com/Milad-Gerami/Hospital_Report_Center" target="_blank" class="proj-btn blue">↗ View on GitHub</a>
           </div>
         </div>
-        <div class="proj-card purple">
+        <div class="proj-card steel">
+          <div class="proj-badge-row">
+            <div class="proj-icon steel">❄️</div>
+            <span class="proj-status steel">Snowflake</span>
+          </div>
+          <div class="proj-category steel">Snowflake · Power BI · DAX</div>
+          <div class="proj-title">US Unemployment Dashboard</div>
+          <p class="proj-desc">Power BI dashboard built on a Snowflake cloud data warehouse, analyzing US unemployment from 1976 to 2025 across all 50 states. Connected via native Snowflake connector with PAT authentication and Import mode. Two-page report with summary KPIs and color-coded year-over-year comparisons on Page 1, and a drillthrough monthly breakdown on Page 2. All rate measures use population-weighted DIVIDE logic instead of simple AVERAGE to prevent small states from skewing national figures. Numbers validated against official BLS data.</p>
+          <div class="proj-tags">
+            <span class="proj-tag steel">Snowflake</span>
+            <span class="proj-tag steel">Power BI</span>
+            <span class="proj-tag steel">DAX</span>
+            <span class="proj-tag steel">Import Mode</span>
+            <span class="proj-tag steel">Power Query</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://github.com/Milad-Gerami/Snowflake_Unemployment_Dashboard" target="_blank" class="proj-btn steel">↗ View on GitHub</a>
+          </div>
+        </div>
+        <div class="proj-card purple centered">
           <div class="proj-badge-row">
             <div class="proj-icon purple">🚀</div>
             <span class="proj-status purple">Full Stack</span>
